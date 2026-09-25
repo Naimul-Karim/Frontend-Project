@@ -9,15 +9,17 @@ function Todoitem({todo}) {
 
    const EditTodo =()=>{
     UpdateTodo(todo.id , {...todo , todo: todoMsg  })
+
+    setisTodoEditable(false)
    }
 
-    const ToggleCompleted = (id)=>{
+    const ToggleCompleted = ()=>{
       ToggleComplete(todo.id)
     }
     
   return (
-    <div className="space-y-3">
-      <div className={`flex border border-black/10 dark:border-white/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300 text-black dark:text-white 
+    <div className="space-y-3 ">
+      <div className={`flex border border-black/10 dark:border-white/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300 text-black dark:text-white  
         ${ 
          todo.completed 
          ? "bg-[#c6e9a7] dark:bg-[#3b5c32]" 
