@@ -17,6 +17,7 @@ This project is a Todo application that helps users manage their daily tasks. Us
 * Dark / Light mode
 * Todo progress tracking
 * Filter todos
+* Prograss Bar
 
 ## Screenshot
 
